@@ -5,47 +5,47 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name:</label>
-                    <input placeholder="Enter your name"type="text" class="form-control">
+                    <input placeholder="Enter your name"type="text" class="form-control" name="Name" [(ngModel)]="Name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Roll No:</label>
-                    <input placeholder="Enter your Rollno"type="text" class="form-control">
+                    <input placeholder="Enter your Rollno"type="text" class="form-control"name="RollNo" [(ngModel)]="RollNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">College Name:</label>
-                    <input placeholder="Enter your College Name"type="text" class="form-control">
+                    <input placeholder="Enter your College Name"type="text" class="form-control"name="CollegeName" [(ngModel)]="CollegeName">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Addmission No:</label>
-                    <input placeholder="Enter your Addmission No"type="text" class="form-control">
+                    <input placeholder="Enter your Addmission No"type="text" class="form-control"name="AddmissionNo" [(ngModel)]="AddmissionNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent Name:</label>
-                    <input placeholder="Enter your Parent name"type="text" class="form-control">
+                    <input placeholder="Enter your Parent name"type="text" class="form-control"name="ParentName" [(ngModel)]="ParentName">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">DOB:</label>
-                    <input placeholder="Enter your DOB"type="date" name="" id="" class="form-control">
+                    <input placeholder="Enter your DOB"type="date" name="DOB" id="" class="form-control" [(ngModel)]="DOB">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address:</label>
-                    <textarea placeholder="Enter your Address"name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea placeholder="Enter your Address"name="Address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="Address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Mobile No:</label>
-                    <input placeholder="Enter your Mobile No"type="tel" class="form-control">
+                    <input placeholder="Enter your Mobile No"type="tel" class="form-control"name="MobileNo" [(ngModel)]="MobileNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent Mobile No:</label>
-                    <input placeholder="Enter your parent Mobile No"type="tel" class="form-control">
+                    <input placeholder="Enter your parent Mobile No"type="tel" class="form-control"name="ParentmobileNo" [(ngModel)]="ParentmobileNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">EmailD:</label>
-                    <input placeholder="Enter your EmailD"type="email" name="" id=""class="form-control">
+                    <input placeholder="Enter your EmailD"type="email" name="EmailD" id=""class="form-control" [(ngModel)]="EmailD">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Blood Group:</label>
-                    <select class="form-control"name="" id="">
+                    <select class="form-control"name="BloodGroup" id=""[(ngModel)]="BloodGroup">
                         <option value="Select">Select</option>
                         <option value="A-">A-</option>
                         <option value="B+">B+</option>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-success" type="button">Submit</button>
+                        <button class="btn btn-success" type="button"(click)="readRegister()">Submit</button>
                       </div>
                 </div>
             </div>
